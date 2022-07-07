@@ -13,8 +13,8 @@ with open(f'vol{i}/Volume-{i}.pdf', 'rb') as f:
     s, e = list(map(int, input("Enter the start and end pg no: ").split()))
     for p in range(s-1, e):
         text += pdf.getPage(p).extractText()
-with open(f'vol{i}/md/meta_index.md', 'w') as f:
+with open(f'vol{i}/csv/meta_index.txt', 'w') as f:
     f.write(text)
-path = Path(f'vol{i}/md/meta_index.md')
+path = Path(f'vol{i}/csv/meta_index.txt')
 print("Done")
 subprocess.call([vscode, path])  # open the file with text processor

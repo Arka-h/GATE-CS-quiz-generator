@@ -31,7 +31,7 @@ This can be further used to write notes related to specific questions, and perfo
     ├── vol1                    # Folder with saved data, logs and the vol1 pdf
     |    ├── data               # Folder with .dir files (saved page_no searches), and .lot files (the lot of remaining q's to pick from)
     |    ├── log                # Folder with saved logs having question number attempted, and timing
-    |    ├── md                 # Contains all meta information about sections and sub-sections
+    |    ├── csv                # Contains all meta information about sections and sub-sections
     |    └──Volume-1.pdf        # GO PYQ Volume1 pdf 
     ├── vol2                    # Folder with saved data, logs and the vol2 pdf
     |    ...                    # Same as for vol1
@@ -40,8 +40,8 @@ This can be further used to write notes related to specific questions, and perfo
     |    ...                    # Same as for vol1/2
     |    └──Volume-3.pdf        
     ├── __init__.py             # For using read_pdf module 
-    ├── extract_meta.py         # Used to extract index page text and open with word processor (preferably vscode)
-    ├── pyqTest.py              # The main test setter, uses the meta.md and section.md for q distribution
+    ├── extract_meta.py         # Used to extract index page text (meta_index.txt) and open with word processor (preferably vscode)
+    ├── pyqTest.py              # The main test setter, uses the meta.csv and sectionx.csv for q distribution
     ├── read_pdf.py             # Contains search utility to search for a question's page no. from pdf/ saved dictionary
     ├── regex_test.py           # Test file to test out the regex [for question(s) extraction from pdf text]
     └── README.md

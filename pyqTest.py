@@ -13,8 +13,8 @@ n = input("Enter Volume#: ")
 vol = f"vol{n}"
 m = 0
 meta = {}
-if os.path.exists(f"{vol}/md/meta.md"):
-    with open(f"{vol}/md/meta.md", 'r') as f:
+if os.path.exists(f"{vol}/csv/meta.csv"):
+    with open(f"{vol}/csv/meta.csv", 'r') as f:
         for row in csv.reader(f):
             print(f"{row[0]}. {row[1]}    \t({row[2]})")
             meta[int(row[0])] = [row[1], int(row[2]), 0]
@@ -66,7 +66,7 @@ with open(f"{vol}/log/{dt}.log", 'w') as log:
         counter += 1
         data = {}
         lot = {}
-        with open(f"{vol}/md/section{s}.md", 'r') as f:
+        with open(f"{vol}/csv/section{s}.csv", 'r') as f:
             for row in csv.reader(f):
                 data[row[0]] = row[1:]  # get the data into data
         # Extract from data
