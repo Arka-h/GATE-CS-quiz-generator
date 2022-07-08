@@ -89,7 +89,8 @@ with open(f"{vol}/log/{dt}.log", 'w') as log:
         # 0 indexed to 1 indexed
         print(
             f"{counter}. Solve Section{s} question on {data[sub_section][0]}, qno {sub_section}.{q+1}")
-        print(f"Page no {getQ(n, f'{sub_section}.{q+1}')}")
+        pg_no = getQ(n, f'{sub_section}.{q+1}')
+        print(f"Page no {pg_no}")
         start = time.time()
         c = input("next?")
         if c == '' or c == 'y' or c == 'Y':
@@ -97,7 +98,7 @@ with open(f"{vol}/log/{dt}.log", 'w') as log:
             stop = time.time()
             delta = time.strftime("%M:%S", time.gmtime(stop-start))
             print("Time taken: ", delta)
-            log.write(f's{s} Q {sub_section}.{q+1}: {delta}\n')
+            log.write(f's{s} Q {sub_section}.{q+1}| pg {pg_no} |t={delta}\n')
         # Saving the lot
         with open(f'{vol}/data/section{s}.lot', 'wb') as f:
             pickle.dump(lot, f)
