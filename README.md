@@ -12,17 +12,24 @@ Multi-section quiz generator based on [GO's 3 volumes of PYQs](https://gatecse.i
 ## Usage
 <br>
 
+The only dependency is the pypdf2 package
+
+> ```$ pip install PyPDF2```
+
 > ```$ python pyqTest.py```
+
 <br>
 
-![WindowsTerminal_LbMX0oeVaQ](https://user-images.githubusercontent.com/47897466/177864786-417e0069-38d8-4963-ab92-a13af5aade73.png)
-![image](https://user-images.githubusercontent.com/47897466/177864996-8bd85175-7980-45b8-8ea5-da4fa8722210.png)
+![image](https://user-images.githubusercontent.com/47897466/177963432-60b60bf9-227c-4358-82e2-fa829e5f0862.png)
+![image](https://user-images.githubusercontent.com/47897466/177963447-0c234260-163e-4174-9f6c-e604abe02477.png)
+
 <br>
 
-The log file of this test run with all the stats.
+- Only press Enter to goto the next question, and log the time taken
+- The log files can be found at `./vol{x}/log/{DATE}_{TIME}.log`
 <br>
 
-![Code_PWMCGxreVm](https://user-images.githubusercontent.com/47897466/177865271-13a71e6c-5d01-4e1b-8cbd-620323b69793.png)
+![image](https://user-images.githubusercontent.com/47897466/177963495-2c7192d6-e84e-4440-af83-3d6a6e6c1601.png)
 
 This can be further used to write notes related to specific questions, and performing analysis
 
