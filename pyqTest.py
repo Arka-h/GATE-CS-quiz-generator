@@ -12,7 +12,7 @@ from datetime import datetime as dt
 import multiprocessing as mp
 
 # Always set this before running script
-testing = True
+testing = False
 show_pg_no = False
 show_timing = True
 
