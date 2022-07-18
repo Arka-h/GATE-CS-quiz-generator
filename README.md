@@ -1,7 +1,7 @@
 # GATE-CS-quiz-generator
 Multi-section quiz generator based on [GO's 3 volumes of PYQs](https://gatecse.in/gate-overflow-book-qa-only-previous-gate-tifr/) <br>
 1. Takes in volume no., section no.(s) & no. of questions.
-2. Randomly generates paper📄, simulates GATE q distribution [Uses distribution of questions per section/sub-section]. 
+2. Randomly generates paper📄, simulates GATE q distribution [Uses distribution of questions per section and sub-section]. 
 3. Reduces cognitive load on reaching the goal 🚩 of finishing all PYQs, gamifies 🎮 your attempts.
 4. Since it is a CLI quiz generator, currently it displays the question to attempt, and tracks attempt time⌛.
 5. Keeps track of the questions attempted ✅, and never repeats a previously attempted question.
