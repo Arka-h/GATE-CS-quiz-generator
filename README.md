@@ -51,4 +51,5 @@ This can be further used to write notes related to specific questions, and perfo
     ├── pyqTest.py              # The main test setter, uses the meta.csv and sectionx.csv for q distribution
     ├── read_pdf.py             # Contains search utility to search for a question's page no. from pdf/ saved dictionary
     ├── regex_test.py           # Test file to test out the regex [for question(s) extraction from pdf text]
+    ├── updateLots.py           # For adding/removing questions that you've attempted and don't want in the paper/ want to add to unattempted questions
     └── README.md
