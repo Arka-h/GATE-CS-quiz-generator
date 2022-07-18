@@ -9,6 +9,8 @@ Multi-section quiz generator based on [GO's 3 volumes of PYQs](https://gatecse.i
 6. Generates reports in log files 📝, having the questions attempted and attempt times, along with other statistics 📈
 7. Code is flexible and can be changed to suit one's needs. For ex. different pdfs, different exam; just need to change some csv files having meta information 
 
+>    NOTE : The pdf search can also be used to find the question. *Beware*, as it may lead you straight to the "answer key" page/ "pyq answer"
+
 ## Usage
 <br>
 
