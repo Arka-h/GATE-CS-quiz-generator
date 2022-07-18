@@ -3,22 +3,31 @@ Multi-section quiz generator based on [GO's 3 volumes of PYQs](https://gatecse.i
 1. Takes in volume no., section no.(s) & no. of questions. to generate the question paper
 2. The generated paper📄, simulates GATE q distribution [Uses distribution of questions per section and sub-section]. 
 3. Reduces cognitive load on reaching the goal 🚩 of finishing all PYQs, gamifies 🎮 your attempts.
-4. Since it is a CLI quiz generator, currently it displays the question to attempt, and tracks attempt time⌛.
-5. Keeps track of the questions attempted ✅, and never repeats a previously attempted question.
-5. Implements binary search on pdf to find and display question's page no. [saves seen pages' question nos for faster🕔 access]
-6. Generates reports in log files 📝, having the questions attempted and attempt times, along with other statistics 📈
-7. Code is flexible and can be changed to suit one's needs. For ex. different pdfs, different exam; just need to change some csv files having meta information 
+4. It is currently a CLI quiz generator, so it displays the question to attempt, and also tracks attempt time⌛.
+5. Keeps track of the questions attempted ✅, and never repeats a previously attempted question (customisable, explained below).
+6. You can add/remove the questions from the 'lot' of unattempted questions using the `updateLots` utility.
+7. Implements binary search on pdf to find and display question's page no. [saves seen pages' question nos too 🕔]
+8. Generates reports in log files 📝, having the questions attempted and attempt times, along with other statistics 📈
+9. Code is flexible and can be changed to suit one's needs. For ex. different pdfs, different exam; just need to change some csv files having meta information 
 
 >    NOTE : The pdf search can also be used to find the question. *Beware*, as it may lead you straight to the "answer key" page/ "pyq answer"
 
 ## Usage
 <br>
 
-The only dependency is the pypdf2 package
+Install the  pypdf2 package, if using the search utility [Optional]
 
 > ```$ pip install PyPDF2```
 
+
+Simply run the `pyqTest` in terminal 
+
 > ```$ python pyqTest.py```
+
+
+> NOTE : The search utility is by default off. Turn it on by changing line 16 in `pyqTest` to this:
+> ``` show_pg_no = True ```
+
 
 <br>
 
