@@ -137,7 +137,8 @@ def load_section_data(vol, s):
     data = {}
     with open(f"vol{vol}/csv/section{s}.csv", 'r') as f:
         for row in csv.reader(f):
-            data[row[0]] = row[1:]  # data['1.1'] = ['Balls in Bins',3]
+            if len(row):
+                data[row[0]] = row[1:]  # data['1.1'] = ['Balls in Bins',3]
     return data
 
 
